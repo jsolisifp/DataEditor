@@ -1,8 +1,7 @@
 from app import App
-from app_csv_editor import CSVEditor
 from runner import Runner
 
-app = CSVEditor()
+app = App()
 
 Runner.Run(app)
 
