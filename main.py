@@ -1,13 +1,8 @@
-from data_editor import DataEditor
+from app import App
+from app_csv_editor import CSVEditor
+from runner import Runner
 
-editor = DataEditor()
-editor.Init()
+app = CSVEditor()
 
-while not editor.ShouldClose():
-    editor.Update()
-    
-editor.Finish()
-
-
-
+Runner.Run(app)
 
